@@ -1,0 +1,31 @@
+{
+    "name": "softiran-org/pas",
+    "type": "library",
+    "description": "Pas payment for Laravel Framework",
+    "keywords": ["Pas", "payment", "laravel", "framework"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "softiran-org",
+            "email": "esmailian12@gmail.com",
+            "homepage": "https://github.com/softiran-org/"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+      "php": "^7.4|^8.0",
+      "ext-json": "*"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Pas"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Pas\\": "src/"
+        }
+    }
+}
