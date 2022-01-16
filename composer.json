@@ -1,32 +1,34 @@
 {
-    "name": "softiran-org/pas",
+     "name": "softiran-org/pas",
     "description": "pas transaction request system",
     "license": "GPL-2.0-only",
-	"type": "library",
-	"require": {
-    "php": ">=7.1.3",
-    "illuminate/support": "5.6.* || 5.7.* || 5.8.* || 6.0.*"
-	},
     "authors": [
         {
             "name": "softiran",
             "email": "esmailian12@gmail.com"
         }
     ],
-	"require-dev": {
-    "phpunit/phpunit": "^5.7"
-	},
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
+    "require": {
+        "guzzlehttp/guzzle": "^6.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "6.3.*",
+        "satooshi/php-coveralls": "^1.0"
+    },
     "autoload": {
         "psr-4": {
             "Pas\\": "src/"
         }
     },
-	"extra": {
+    "extra": {
         "laravel": {
             "providers": [
-                "Pas\\PasServiceProvider"
-            ]
+                "Pas\\Laravel\\ZarinpalServiceProvider"
+            ],
+            "aliases": {
+                "Pas": "Pas\\Laravel\\Facade\\Pas"
+            }
         }
     }
 }
