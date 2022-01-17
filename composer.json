@@ -1,5 +1,5 @@
 {
-     "name": "softiran-org/pas",
+    "name": "softiran-org/pas",
     "description": "pas transaction request system",
     "license": "GPL-2.0-only",
     "authors": [
@@ -21,14 +21,11 @@
             "Pas\\": "src/"
         }
     },
-    "extra": {
+	"extra": {
         "laravel": {
             "providers": [
-                "Pas\\Laravel\\ZarinpalServiceProvider"
-            ],
-            "aliases": {
-                "Pas": "Pas\\Laravel\\Facade\\Pas"
-            }
+                "Pas\\PasServiceProvider"
+            ]
         }
-    }
+    },
 }
