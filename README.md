@@ -13,7 +13,6 @@ laravel service provider should register automatically.
 **request new payment:**
 ```php
 <?php
-<?php
 
 use Pas\Pas;
 
@@ -65,4 +64,4 @@ class RestTest extends \PHPUnit\Framework\TestCase
 		}
 	}
 }
-```php
+```
